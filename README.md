@@ -2,7 +2,7 @@
 
 A simple game that I used to demonstrate to Budiak what I did for a living.
 
-You can listen to the episode at [this link](http://dynamitegun.com)
+You can listen to the episode at [this link](http://www.dynamitegun.com/dgdcdc-episode-101)
 
 Please send PRs if you want to make the game better.
 
@@ -12,5 +12,6 @@ open a console and type the following:
 
 ```
 git clone https://github.com/bhardin/dynamite_crawl
+cd dynamite_crawl
 python dynamite_crawl.py
 ```
