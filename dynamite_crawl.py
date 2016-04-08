@@ -11,9 +11,9 @@ troll_name = [
             ]
 
 troll_attacks = [
-                    'punches',
-                    'bites',
-                    'headbutts'
+                    'punch',
+                    'bite',
+                    'headbutt'
                 ]
 
 WAIT_TIME = 10
@@ -24,7 +24,7 @@ hero = Character(name=hero_name)
 troll = Troll(name=random.choice(troll_name))
 
 print('You see Troll named ' + troll.name)
-attack_type = raw_input("How do you attack. (e.g. punch, kick, etc.)? ")
+attack_type = raw_input("How do you attack (e.g. punch, kick, etc.)? ")
 
 if hero.initiative() > troll.initiative():
     print('{} WON the intiative. Hell Yeah.'.format(hero.name))
@@ -39,7 +39,7 @@ if hero.initiative() > troll.initiative():
         print('That was enough to kill the filthy {}'.format(troll.name))
         print('{} Wins!'.format(hero.name))
     else:
-        print('{} is WEAK. {} is too strok.'.format(hero.name, troll.name))
+        print('{} is WEAK. {} is too strong.'.format(hero.name, troll.name))
         print('{} is dead. You Lose!'.format(hero.name))
 else:
     print('{} LOST the intiative. Oh No!'.format(hero.name))
@@ -55,4 +55,4 @@ else:
         time.sleep(WAIT_TIME)
         print('{} only angers {} with his pitiful attack.'
               .format(troll.name, hero.name))
-        print('{} is Berzerk. You Win!'.format(hero.name))
+        print('{} goes Berserk. You Win!'.format(hero.name))
